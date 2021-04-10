@@ -28,7 +28,7 @@ module.exports = {
             "akitainu:git-diff-source",
             {
               before: process.env.GITHUB_BASE_REF,
-              after: process.env.GITHUB_HEAD_REF
+              after: "HEAD"
             }
           ],
           checker: "akitainu-checker-eslint",
