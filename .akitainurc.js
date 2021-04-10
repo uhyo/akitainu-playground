@@ -22,7 +22,7 @@ module.exports = {
     },
     ...(
       // additional check for pull request
-      process.env.GITHUB_BASE_REF && process.env.GITHUB_HEAD_REF ? [
+      process.env.GITHUB_BASE_REF ? [
         {
           source: [
             "akitainu:git-diff-source",
