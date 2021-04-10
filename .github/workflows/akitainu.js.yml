@@ -20,5 +20,6 @@ jobs:
           node-version: 15.x
       - name: Fetch base branch
         run: git fetch --depth 1 origin ${GITHUB_BASE_REF}
+        if: ${{ env.GITHUB_BASE_REF }}
       - run: npm ci
       - run: npm run lint
