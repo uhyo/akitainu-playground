@@ -27,7 +27,7 @@ module.exports = {
           source: [
             "akitainu:git-diff-source",
             {
-              before: process.env.GITHUB_BASE_REF,
+              before: "origin/" + process.env.GITHUB_BASE_REF,
               after: "HEAD"
             }
           ],
