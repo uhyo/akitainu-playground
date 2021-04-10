@@ -22,13 +22,13 @@ module.exports = {
     },
     ...(
       // additional check for pull request
-      process.env.AKITAINU_BEFORE_SHA && process.env.AKITAINU_AFTER_SHA ? [
+      process.env.AKITAINU_BEFORE_REF && process.env.AKITAINU_AFTER_REF ? [
         {
           source: [
             "akitainu:git-diff-source",
             {
-              before: process.env.AKITAINU_BEFORE_SHA,
-              after: process.env.AKITAINU_AFTER_SHA
+              before: process.env.AKITAINU_BEFORE_REF,
+              after: process.env.AKITAINU_AFTER_REF
             }
           ],
           checker: "akitainu-checker-eslint",
