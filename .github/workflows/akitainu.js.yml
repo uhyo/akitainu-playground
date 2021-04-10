@@ -18,5 +18,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 15.x
+      - name: Fetch base branch
+        run: git fetch --depth 1 origin ${GITHUB_BASE_REF}
       - run: npm ci
       - run: npm run lint
