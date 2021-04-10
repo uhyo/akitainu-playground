@@ -1,0 +1,21 @@
+{
+  "name": "akitainu-playground",
+  "version": "1.0.0",
+  "description": "Akitainu playground",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "lint": "akitainu"
+  },
+  "keywords": [],
+  "author": "uhyo <uhyo@uhy.ooo>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "akitainu": "0.1.0-alpha.0",
+    "akitainu-checker-eslint": "0.1.0-alpha.0",
+    "eslint": "^7.24.0",
+    "typescript": "^4.2.4"
+  }
+}
