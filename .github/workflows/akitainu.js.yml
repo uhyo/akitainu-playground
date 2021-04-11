@@ -23,3 +23,6 @@ jobs:
         if: ${{ github.base_ref }}
       - run: npm ci
       - run: npm run lint
+          env:
+            GITHUB_TOKEN: ${{ github.token }}
+            PR_NUMBER: ${{ github.event.pull_request.number }}
