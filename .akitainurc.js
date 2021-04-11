@@ -44,13 +44,13 @@ module.exports = {
   ],
   "reporters": [
     "akitainu:pretty-console-reporter",
-    ...(process.env.GITHUB_TOKEN && process.env.PR_NUMBER ? [
+    ...(process.env.GITHUB_TOKEN && process.env.PR_NUMBER ? [[
       "akitainu-reporter-github-pr-review",
       {
         "githubToken": process.env.GITHUB_TOKEN,
         "repository": "uhyo/akitainu-playground",
         "prNumber": Number(process.env.PR_NUMBER)
       }
-    ] : [])
+    ]] : [])
   ]
 }
