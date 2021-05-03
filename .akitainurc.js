@@ -54,7 +54,9 @@ module.exports = {
               after: "HEAD"
             }
           ],
-          checker: "akitainu-checker-typescript",
+          checker: ["akitainu-checker-typescript", {
+            tsconfig: "./tsconfig.stricter.json"
+          }]
         }
       ] : []
     )
