@@ -28,7 +28,7 @@ module.exports = {
     ...(
       // additional check for pull request
       process.env.GITHUB_BASE_REF ? [
-        // stricter TypeScript check for changed files
+        // stricter ESLint check for changed files
         {
           source: [
             "akitainu:git-diff-source",
@@ -45,7 +45,7 @@ module.exports = {
             }
           ]
         },
-        // stricter ESLint check for changed files
+        // stricter TypeScript check for changed files
         {
           source: [
             "akitainu:git-diff-source",

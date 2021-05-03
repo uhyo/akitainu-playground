@@ -15,7 +15,7 @@
     "@typescript-eslint/parser": "^4.22.0",
     "akitainu": "0.1.0-alpha.4",
     "akitainu-checker-eslint": "^0.1.0-alpha.0",
-    "akitainu-checker-typescript": "^0.1.0-alpha.3",
+    "akitainu-checker-typescript": "0.1.0-alpha.5",
     "akitainu-reporter-github-pr-review": "^0.1.0-alpha.2",
     "eslint": "^7.25.0",
     "typescript": "^4.2.4"

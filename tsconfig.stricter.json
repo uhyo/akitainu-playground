@@ -1,5 +1,5 @@
 {
-  "extends": "./tscofnig.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "noImplicitAny": true,
     "noUncheckedIndexedAccess": true
