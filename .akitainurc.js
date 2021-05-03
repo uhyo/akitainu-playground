@@ -3,6 +3,11 @@ const eslintAdditionalCheckRules = ["@typescript-eslint/no-explicit-any"]
 
 module.exports = {
   rules: [
+    // default TypeScript configuration
+    {
+      checker: "akitainu-checker-typescript",
+    },
+    // default ESLint configuration
     {
       source: [
         "akitainu:static-source",
@@ -23,6 +28,7 @@ module.exports = {
     ...(
       // additional check for pull request
       process.env.GITHUB_BASE_REF ? [
+        // stricter TypeScript check for changed files
         {
           source: [
             "akitainu:git-diff-source",
@@ -38,6 +44,17 @@ module.exports = {
               include: eslintAdditionalCheckRules
             }
           ]
+        },
+        // stricter ESLint check for changed files
+        {
+          source: [
+            "akitainu:git-diff-source",
+            {
+              before: "origin/" + process.env.GITHUB_BASE_REF,
+              after: "HEAD"
+            }
+          ],
+          checker: "akitainu-checker-typescript",
         }
       ] : []
     )

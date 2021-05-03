@@ -1,0 +1,7 @@
+{
+  "extends": "./tscofnig.json",
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noUncheckedIndexedAccess": true
+  }
+}

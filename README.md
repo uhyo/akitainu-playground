@@ -4,4 +4,6 @@ This repository is an example setup of [akitainu](https://github.com/uhyo/akitai
 
 This repository has a standard ESLint configuration. Also, **akitainu** is set up so that changed files in PRs are checked with additional rule `@typescript-eslint/no-explicit-any`. Existing files (namely `src/any-paradise.ts`) does not trigger the rule (as long as that file is not changed).
 
+Also, type checking by TypeScript is done via akitainu.
+
 Check [pull requests](https://github.com/uhyo/akitainu-playground/pulls) to see how akitainu works.
