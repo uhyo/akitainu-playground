@@ -10,7 +10,7 @@ module.exports = {
     // default ESLint configuration
     {
       source: [
-        "akitainu:static-source",
+        "akitainu:source-static",
         {
           files: [
             "./src/**/*.ts"
@@ -19,7 +19,7 @@ module.exports = {
       ],
       checker: "akitainu-checker-eslint",
       filter: [
-        "akitainu:by-code-filter",
+        "akitainu:filter-by-code",
         {
           exclude: eslintAdditionalCheckRules
         }
@@ -31,7 +31,7 @@ module.exports = {
         // stricter ESLint check for changed files
         {
           source: [
-            "akitainu:git-diff-source",
+            "akitainu:source-git-diff",
             {
               before: "origin/" + process.env.GITHUB_BASE_REF,
               after: "HEAD"
@@ -39,7 +39,7 @@ module.exports = {
           ],
           checker: "akitainu-checker-eslint",
           filter: [
-            "akitainu:by-code-filter",
+            "akitainu:filter-by-code",
             {
               include: eslintAdditionalCheckRules
             }
@@ -48,7 +48,7 @@ module.exports = {
         // stricter TypeScript check for changed files
         {
           source: [
-            "akitainu:git-diff-source",
+            "akitainu:source-git-diff",
             {
               before: "origin/" + process.env.GITHUB_BASE_REF,
               after: "HEAD"
@@ -62,7 +62,7 @@ module.exports = {
     )
   ],
   "reporters": [
-    "akitainu:pretty-console-reporter",
+    "akitainu:reporter-pretty-console",
     ...(process.env.GITHUB_TOKEN && process.env.PR_NUMBER ? [[
       "akitainu-reporter-github-pr-review",
       {

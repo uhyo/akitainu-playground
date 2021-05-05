@@ -11,12 +11,12 @@
   "author": "uhyo <uhyo@uhy.ooo>",
   "license": "MIT",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.22.0",
-    "@typescript-eslint/parser": "^4.22.0",
-    "akitainu": "0.1.0-alpha.4",
-    "akitainu-checker-eslint": "^0.1.0-alpha.0",
-    "akitainu-checker-typescript": "0.1.0-alpha.5",
-    "akitainu-reporter-github-pr-review": "^0.1.0-alpha.2",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "akitainu": "^0.1.0-alpha.6",
+    "akitainu-checker-eslint": "^0.1.0-alpha.6",
+    "akitainu-checker-typescript": "^0.1.0-alpha.6",
+    "akitainu-reporter-github-pr-review": "^0.1.0-alpha.6",
     "eslint": "^7.25.0",
     "typescript": "^4.2.4"
   }
