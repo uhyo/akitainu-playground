@@ -4,3 +4,5 @@ function useAny(value: any): any {
 }
 
 const any: any = "any";
+
+const onemore: any = "any";
