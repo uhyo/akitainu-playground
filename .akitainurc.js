@@ -1,5 +1,5 @@
 // eslint rules to check only for changed files in PRs
-const eslintAdditionalCheckRules = ["@typescript-eslint/no-explicit-any"]
+const eslintAdditionalCheckRules = ["@typescript-eslint/no-implicit-any"]
 
 module.exports = {
   rules: [
